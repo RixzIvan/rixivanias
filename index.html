@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Assurance and Security</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RM</h1>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project1.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="#contact">Portfolio</a></li>
+                </ul>
+                <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="welcome" class="section">
+        <div class="container">
+            <h2>Information Assurance and Security 1</h2>
+        </div>
+    </section>
+
+    <section id="about" class="section fade-in">
+        <div class="container">
+            <h2>About</h2>
+            <p>"I am a 20-year-old college student currently in third year pursuing a Bachelor of Science in Information Technology, and I have a keen interest in expanding my knowledge in both math and design, seeking to integrate these fields into my academic and professional pursuits."</p>
+
+            <div class="team">
+                <div class="card">
+                    <img src="images/Group 1.png" alt="Mike" class="card-img">
+                    <div class="card-content">
+                        <h3>Rixz Ivan Montero</h3>
+                        <u class="title">Information</u>
+                        <p>BSIT - 3D</p>
+                        <p>09932155698</p>
+                        <p>xx599xxxmontero@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/cpc.png" alt="Cordova Public College" class="card-img">
+                    <div class="card-content">
+                        <h3>Cordova Public College</h3>
+                        <u class="title">Major Subject</u>
+                        <p>Web Development</p>
+                        <p>Application Development</p>
+                        <p>Networking 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #AF2F34;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#welcome {
+    background: url('images/image\ 1.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center; 
+    padding: 20% 5%;
+}
+
+#welcome h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+#p1 {
+    background: url('images/fbf.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center; 
+    padding: 20% 5%;
+}
+
+#p1 h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+#p2 {
+    background: url('images/er.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center; 
+    padding: 20% 5%;
+}
+
+#p2 h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+#about {
+    background-color: #E08279;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+}
+
+#about p {
+    margin: 0.5rem 0;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 300px;
+    margin: 0.5rem;
+    text-align: center;
+    background: #AF2F34;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin: 0.5rem 0;
+}
+
+.card-content .title {
+    color: #f7f7f7;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.75rem;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+#contact {
+    background-color: #AF2F34;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    cursor: pointer;
+}
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    font-size: 30px;
+    color: lightgray;
+}
+.star-rating input:checked ~ label {
+    color: gold;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+body {
+    background-color: #E08279;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    #menu-toggle {
+        display: block;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+
+

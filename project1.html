@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RM</h1>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project1.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                </ul>
+                <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="p1" class="section">
+        <div class="container">
+            <h2>Feedback Form</h2>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label>Rating</label>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" class="fas fa-star"></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" class="fas fa-star"></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" class="fas fa-star"></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" class="fas fa-star"></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" class="fas fa-star"></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea class="form-control" id="comments" rows="4" required></textarea>
+                <small id="commentsHelp" class="form-text text-muted">Minimum 10 characters.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="error" class="text-danger mt-3"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
